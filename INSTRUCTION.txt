@@ -1,0 +1,11 @@
+this app was built on Angular-6 framework
+
+Before running the application install the files listed below..
+1. npm install
+2. npm i twitter --save
+3. npm i express --save
+
+First go to application directory and open command window
+then, run server.js in server folder by typing "node server/server.js" without quote
+then, open another command window and type "ng serve".
+application will be hosted at https://localhost:4200

@@ -1,0 +1,148 @@
+.item {
+    margin-bottom: 1em;
+    text-align: center;
+    background: rgba(99, 225, 158, 0.1);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    margin-top: 0px;
+    background: #EFFCF5;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+}
+
+.box {
+    padding: 1.5em;
+}
+
+.setButton {
+    background-color: #66D7D7;
+    border-style: none;
+    width: 50px;
+    height: 2em;
+    border-radius: 5px;
+    margin-left: 3px;
+    outline: none;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.input {
+    border-style: none;
+    height: 2em;
+    margin-right: 5px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    width: 100px;
+    outline: none;
+}
+
+.nav, .nav-item {
+    position: relative;
+}
+
+.main {
+    padding-top: 150px;
+    overflow: hidden;
+}
+
+.mini-icon {
+    display: none;
+    right: 0;
+}
+
+.showdropDown {
+    display: block !important;
+    z-index: 9999;
+}
+
+h1 {
+    margin-top: 3em;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.show {
+    display: none;
+}
+
+.social>a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.mobile {
+    display: block;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+    transform-origin: left center;
+    z-index: 10000;
+}
+
+.showMobile {
+    transform: scaleX(1);
+}
+
+@keyframes animation {
+    from {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    to {
+        transform: scaleX(1)
+    }
+}
+
+.mobile>ul {
+    margin-left: 1em;
+    margin-top: 3em;
+}
+
+.mobile a {
+    color: white !important;
+}
+
+@media only screen and (min-width:770px) {
+    .showMobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+    .box {
+        width: 100%;
+    }
+    .main {
+        padding-top: 75px;
+    }
+    .item {
+        width: 100%;
+    }
+    .mini-icon {
+        display: block;
+    }
+    .showMobile {
+        display: block;
+    }
+}
